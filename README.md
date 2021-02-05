@@ -167,3 +167,16 @@ Due to the [Rapid API alpha vantage](https://rapidapi.com/alphavantage/api/alpha
 2.	Checks if all params are valid.
 3.	Check if user exists.
 4.	Check if user has enough shares.
+
+## Examples
+![](images/help.PNG)
+![](images/start.PNG)
+![](images/restart.PNG)
+![](images/symbols.PNG)
+![](images/view.PNG)
+![](images/leaderboard.PNG)
+![](images/show_balance.PNG)
+![](images/my_stocks.PNG)
+![](images/my_orders.PNG)
+![](images/buy.PNG)
+![](images/sell.PNG)

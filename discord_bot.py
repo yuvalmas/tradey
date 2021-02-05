@@ -376,4 +376,4 @@ async def my_orders(ctx):
         await ctx.send(embed=User_Doesnt_Exists())
 
 
-client.run('DISCORD-BOT-TOKEN')
+client.run('BOT-TOKEN')

@@ -3,7 +3,7 @@ from db_inserts import *
 import time
 
 conn_str = ("Driver={SQL Server Native Client 11.0};"
-            "Server=DESKTOP-KNVBCU0\SQLEXPRESS;"
+            "Server=SERVER-IP\SQLEXPRESS;"
             "Database=Stocks_Bot;"
             "Trusted_Connection=yes;")
 conn = pyodbc.connect(conn_str)
@@ -65,7 +65,6 @@ def check_buy_limits():
 def check_sell_limits():
     Symbols = get_stock_names()
     for symbol in Symbols:
-        print(symbol)
         cursor.execute("""
         BEGIN
 
@@ -121,7 +120,7 @@ def check_sell_limits():
         END""",(symbol))
     conn.commit()
 
-for i in range(10):
+while True:
     check_sell_limits()
     time.sleep(1)
     check_buy_limits()
