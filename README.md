@@ -139,7 +139,7 @@ Due to the [Rapid API alpha vantage](https://rapidapi.com/alphavantage/api/alpha
 •	Symbol: Symbol of the share to buy.\
 •	Price: Price the user wants to buy the share at.\
 •	Amount: Amount of shares to buy.\
-•	Limit: amount of days for the order before cancelling.\
+•	Limit: Amount of days for the order before cancelling.\
 **Usage Example:**
 ```
 !buy TSLA 900 2 7
@@ -157,7 +157,7 @@ Due to the [Rapid API alpha vantage](https://rapidapi.com/alphavantage/api/alpha
 •	Symbol: Symbol of the share to buy.\
 •	Price: Price the user wants to sell the share at.\
 •	Amount: Amount of shares to sell.\
-•	Limit: amount of days for the order before cancelling.\
+•	Limit: Amount of days for the order before cancelling.\
 **Usage Example:**
 ```
 !sell TSLA 900 2 7
