@@ -1,4 +1,4 @@
-import requests
+import requests, os
 
 def get_data_from_api(stock_symbol):
     url = "https://alpha-vantage.p.rapidapi.com/query"
@@ -6,7 +6,7 @@ def get_data_from_api(stock_symbol):
     querystring = {"function":"GLOBAL_QUOTE","symbol":f'{stock_symbol}'}
 
     headers = {
-        'x-rapidapi-key': "API-KEY",
+        'x-rapidapi-key': os.environ.get("RAPIDAPI-KEY"),
         'x-rapidapi-host': "alpha-vantage.p.rapidapi.com"
         }
 

@@ -2,6 +2,7 @@ import pyodbc
 import requests
 import json
 import time
+import os
 from data_from_api import *
 from db_inserts import *
 import discord
@@ -34,7 +35,7 @@ async def on_command_error(ctx, error):
 async def start_orders(ctx):
     while True:
         conn_str = ("Driver={SQL Server Native Client 11.0};"
-            "Server=SERVER-IP\SQLEXPRESS;"
+            "Server=DESKTOP-KLCEF57\SQLEXPRESS;"
             "Database=Stocks_Bot;"
             "Trusted_Connection=yes;")
         conn = pyodbc.connect(conn_str)
@@ -174,4 +175,4 @@ def update_prices(symbol, price):
     [Current_value] = [Amount]*? WHERE [Symbol] = ?''', (price, symbol))
     cursor.commit()
 
-client.run('BOT-TOKEN')
+client.run(os.environ.get("DISCORD-BOT-TOKEN"))

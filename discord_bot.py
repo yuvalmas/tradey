@@ -6,6 +6,7 @@ from db_inserts import *
 from datetime import datetime
 import random
 from discord.ext.commands import CommandNotFound
+import os
 
 # Create a client
 client = discord.Client()
@@ -376,4 +377,4 @@ async def my_orders(ctx):
         await ctx.send(embed=User_Doesnt_Exists())
 
 
-client.run('BOT-TOKEN')
+client.run(os.environ.get("DISCORD-BOT-TOKEN"))

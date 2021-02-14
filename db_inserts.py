@@ -2,7 +2,7 @@ import pyodbc
 
 # Create a connection to the database
 conn_str = ("Driver={SQL Server Native Client 11.0};"
-            "Server=SERVER-IP\SQLEXPRESS;"
+            "Server=DESKTOP-KLCEF57\SQLEXPRESS;"
             "Database=Stocks_Bot;"
             "Trusted_Connection=yes;")
 conn = pyodbc.connect(conn_str)
